@@ -1,0 +1,10 @@
+.barPart {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    height: 30px;
+}
+
+.barPart:hover {
+    filter: contrast(1.5);
+}
