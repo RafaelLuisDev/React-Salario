@@ -66,7 +66,7 @@ export default class PieChart extends Component {
 
     render() {
         return (
-            <div className="chart-container">
+            <div className="chart-container col s12 m6 l6 offset-l3 valign-wrapper">
                 <canvas id="myChart"></canvas>
             </div>
         );

@@ -3,7 +3,6 @@ import './App.css';
 import InputFullSalary from './Components/InputFullSalary';
 import InputReadOnly from './Components/InputReadOnly';
 import { calculateSalaryFrom } from './Helpers/salary';
-import Bar from './Components/Bar';
 import PieChart from './Components/PieChart';
 
 export default class App extends Component {
@@ -59,9 +58,7 @@ export default class App extends Component {
                             <InputReadOnly id="netSalary" value={netSalary} fullSalary={fullSalary} color={'#16a085'} />
                         </div>
                     </form>
-                    <div className="pie col s12 m6 l12 valign-wrapper">
-                        <PieChart info={{ fullSalary, discountINSS, discountIRPF, netSalary }} />
-                    </div>
+                    <PieChart info={{ fullSalary, discountINSS, discountIRPF, netSalary }} />
                 </div>
             </div>
         );
